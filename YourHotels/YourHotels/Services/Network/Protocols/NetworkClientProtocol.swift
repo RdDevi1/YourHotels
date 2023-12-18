@@ -8,5 +8,9 @@
 import Foundation
 
 protocol NetworkClientProtocol: Any {
-    
+    func fetchData<T: Decodable>(
+        with urlString: String,
+        model: T.Type,
+        completion: @escaping (Result<T, Error>) -> Void
+    )
 }

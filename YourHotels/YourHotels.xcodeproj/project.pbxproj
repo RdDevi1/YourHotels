@@ -29,6 +29,12 @@
 		C494CCDF2B30CEB80007CCA9 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCDE2B30CEB80007CCA9 /* PaymentViewController.swift */; };
 		C494CCE42B30D0EB0007CCA9 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCE32B30D0EB0007CCA9 /* NetworkClient.swift */; };
 		C494CCE72B30D1060007CCA9 /* NetworkClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCE62B30D1060007CCA9 /* NetworkClientProtocol.swift */; };
+		C494CCE92B30DF0C0007CCA9 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCE82B30DF0C0007CCA9 /* Customer.swift */; };
+		C494CCEC2B30DF670007CCA9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C494CCEB2B30DF670007CCA9 /* Kingfisher */; };
+		C494CCEF2B30DF770007CCA9 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C494CCEE2B30DF770007CCA9 /* SnapKit */; };
+		C494CCF12B30DF770007CCA9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C494CCF02B30DF770007CCA9 /* SnapKit-Dynamic */; };
+		C494CCF42B30E0710007CCA9 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF32B30E0710007CCA9 /* MainButton.swift */; };
+		C494CCF62B30E1100007CCA9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,9 @@
 		C494CCDE2B30CEB80007CCA9 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		C494CCE32B30D0EB0007CCA9 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		C494CCE62B30D1060007CCA9 /* NetworkClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientProtocol.swift; sourceTree = "<group>"; };
+		C494CCE82B30DF0C0007CCA9 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		C494CCF32B30E0710007CCA9 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C494CCEC2B30DF670007CCA9 /* Kingfisher in Frameworks */,
+				C494CCEF2B30DF770007CCA9 /* SnapKit in Frameworks */,
+				C494CCF12B30DF770007CCA9 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				C494CCB32B30BF160007CCA9 /* App */,
+				C494CCF22B30DFF30007CCA9 /* Components */,
 				C494CCC22B30CC050007CCA9 /* Extensions */,
 				C494CCB92B30C5D50007CCA9 /* Models */,
 				C494CCB42B30C4A40007CCA9 /* Presentation */,
@@ -164,6 +177,7 @@
 				C494CCBC2B30C7150007CCA9 /* Room.swift */,
 				C494CCBE2B30C7880007CCA9 /* Tourist.swift */,
 				C494CCC02B30C7E20007CCA9 /* Tour.swift */,
+				C494CCE82B30DF0C0007CCA9 /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -235,6 +249,15 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		C494CCF22B30DFF30007CCA9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C494CCF32B30E0710007CCA9 /* MainButton.swift */,
+				C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -251,6 +274,11 @@
 			dependencies = (
 			);
 			name = YourHotels;
+			packageProductDependencies = (
+				C494CCEB2B30DF670007CCA9 /* Kingfisher */,
+				C494CCEE2B30DF770007CCA9 /* SnapKit */,
+				C494CCF02B30DF770007CCA9 /* SnapKit-Dynamic */,
+			);
 			productName = YourHotels;
 			productReference = C494CC9C2B30BB670007CCA9 /* YourHotels.app */;
 			productType = "com.apple.product-type.application";
@@ -279,6 +307,10 @@
 				Base,
 			);
 			mainGroup = C494CC932B30BB670007CCA9;
+			packageReferences = (
+				C494CCEA2B30DF670007CCA9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C494CCED2B30DF770007CCA9 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = C494CC9D2B30BB670007CCA9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -312,6 +344,7 @@
 				C494CCC92B30CCDE0007CCA9 /* HotelViewModel.swift in Sources */,
 				C494CCA02B30BB670007CCA9 /* AppDelegate.swift in Sources */,
 				C494CCBF2B30C7880007CCA9 /* Tourist.swift in Sources */,
+				C494CCF62B30E1100007CCA9 /* CustomNavigationBar.swift in Sources */,
 				C494CCD92B30CE410007CCA9 /* BookingViewModel.swift in Sources */,
 				C494CCDF2B30CEB80007CCA9 /* PaymentViewController.swift in Sources */,
 				C494CCE72B30D1060007CCA9 /* NetworkClientProtocol.swift in Sources */,
@@ -320,8 +353,10 @@
 				C494CCC42B30CC320007CCA9 /* UICollectionView+Reusable+Ext.swift in Sources */,
 				C494CCD22B30CDBB0007CCA9 /* RoomViewController.swift in Sources */,
 				C494CCDD2B30CE880007CCA9 /* BookingViewController.swift in Sources */,
+				C494CCE92B30DF0C0007CCA9 /* Customer.swift in Sources */,
 				C494CCD02B30CD8D0007CCA9 /* RoomViewModelProtocol.swift in Sources */,
 				C494CCCB2B30CD080007CCA9 /* HotelViewModelProtocol.swift in Sources */,
+				C494CCF42B30E0710007CCA9 /* MainButton.swift in Sources */,
 				C494CCD52B30CE040007CCA9 /* BookingViewModelProtocol.swift in Sources */,
 				C494CCA22B30BB670007CCA9 /* SceneDelegate.swift in Sources */,
 				C494CCBD2B30C7150007CCA9 /* Room.swift in Sources */,
@@ -543,6 +578,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C494CCEA2B30DF670007CCA9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.10.1;
+			};
+		};
+		C494CCED2B30DF770007CCA9 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C494CCEB2B30DF670007CCA9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C494CCEA2B30DF670007CCA9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C494CCEE2B30DF770007CCA9 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C494CCED2B30DF770007CCA9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		C494CCF02B30DF770007CCA9 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C494CCED2B30DF770007CCA9 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C494CC942B30BB670007CCA9 /* Project object */;
 }
