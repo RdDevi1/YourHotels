@@ -37,6 +37,7 @@
 		C494CCF62B30E1100007CCA9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */; };
 		C494CCFA2B30E7BB0007CCA9 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF92B30E7BB0007CCA9 /* CoordinatorProtocol.swift */; };
 		C494CCFC2B30E7DC0007CCA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCFB2B30E7DC0007CCA9 /* AppCoordinator.swift */; };
+		C494CCFE2B344FDD0007CCA9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCFD2B344FDD0007CCA9 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		C494CCF92B30E7BB0007CCA9 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		C494CCFB2B30E7DC0007CCA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C494CCFD2B344FDD0007CCA9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				C494CCC32B30CC320007CCA9 /* UICollectionView+Reusable+Ext.swift */,
+				C494CCFD2B344FDD0007CCA9 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				C494CCCB2B30CD080007CCA9 /* HotelViewModelProtocol.swift in Sources */,
 				C494CCF42B30E0710007CCA9 /* MainButton.swift in Sources */,
 				C494CCD52B30CE040007CCA9 /* BookingViewModelProtocol.swift in Sources */,
+				C494CCFE2B344FDD0007CCA9 /* UIColor+Extension.swift in Sources */,
 				C494CCA22B30BB670007CCA9 /* SceneDelegate.swift in Sources */,
 				C494CCBD2B30C7150007CCA9 /* Room.swift in Sources */,
 			);
