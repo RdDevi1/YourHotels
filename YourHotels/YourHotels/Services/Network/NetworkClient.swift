@@ -16,8 +16,14 @@ enum NetworkClientError: Error {
 
 struct NetworkClient: NetworkClientProtocol {
     
-    let urlSession = URLSession.shared
+    private let urlSession: URLSession
     private let decoder: JSONDecoder
+    
+    init(urlSession: URLSession = URLSession.shared,
+         decoder: JSONDecoder = JSONDecoder()) {
+        self.urlSession = urlSession
+        self.decoder = decoder
+    }
     
     func fetchData<T>(
         with urlString: String,
@@ -26,7 +32,7 @@ struct NetworkClient: NetworkClientProtocol {
     ) where T : Decodable {
     
         guard let url = URL(string: urlString) else { return }
-        var request = URLRequest(url: url)
+        let request = URLRequest(url: url)
         
         urlSession.dataTask(with: request) { data, response, error in
             guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
@@ -43,7 +49,7 @@ struct NetworkClient: NetworkClientProtocol {
                 self.parse(to: model, with: data, completion: completion)
             }
             
-            if let error {
+            if error != nil {
                 completion(.failure(NetworkClientError.requestError))
             }
         }

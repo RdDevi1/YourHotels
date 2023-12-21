@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+final class HotelViewModel: HotelViewModelProtocol {
+    
+    private let networkClient: NetworkClientProtocol?
+    
+    // MARK: - Lifecycle:
+    init(networkClient: NetworkClientProtocol) {
+        self.networkClient = networkClient
+    }
+    
+}

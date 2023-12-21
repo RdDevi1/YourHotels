@@ -35,6 +35,8 @@
 		C494CCF12B30DF770007CCA9 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C494CCF02B30DF770007CCA9 /* SnapKit-Dynamic */; };
 		C494CCF42B30E0710007CCA9 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF32B30E0710007CCA9 /* MainButton.swift */; };
 		C494CCF62B30E1100007CCA9 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */; };
+		C494CCFA2B30E7BB0007CCA9 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCF92B30E7BB0007CCA9 /* CoordinatorProtocol.swift */; };
+		C494CCFC2B30E7DC0007CCA9 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C494CCFB2B30E7DC0007CCA9 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +46,7 @@
 		C494CCA32B30BB670007CCA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C494CCA82B30BB690007CCA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C494CCAB2B30BB690007CCA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C494CCAD2B30BB690007CCA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C494CCAD2B30BB690007CCA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		C494CCBA2B30C5E50007CCA9 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
 		C494CCBC2B30C7150007CCA9 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		C494CCBE2B30C7880007CCA9 /* Tourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tourist.swift; sourceTree = "<group>"; };
@@ -65,6 +67,8 @@
 		C494CCE82B30DF0C0007CCA9 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		C494CCF32B30E0710007CCA9 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		C494CCF52B30E1100007CCA9 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		C494CCF92B30E7BB0007CCA9 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		C494CCFB2B30E7DC0007CCA9 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,6 @@
 		C494CC932B30BB670007CCA9 = {
 			isa = PBXGroup;
 			children = (
-				C494CCAD2B30BB690007CCA9 /* Info.plist */,
 				C494CC9E2B30BB670007CCA9 /* YourHotels */,
 				C494CC9D2B30BB670007CCA9 /* Products */,
 			);
@@ -101,6 +104,8 @@
 		C494CC9E2B30BB670007CCA9 /* YourHotels */ = {
 			isa = PBXGroup;
 			children = (
+				C494CCF72B30E78B0007CCA9 /* Coordinator */,
+				C494CCAD2B30BB690007CCA9 /* Info.plist */,
 				C494CCB32B30BF160007CCA9 /* App */,
 				C494CCF22B30DFF30007CCA9 /* Components */,
 				C494CCC22B30CC050007CCA9 /* Extensions */,
@@ -258,6 +263,23 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		C494CCF72B30E78B0007CCA9 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C494CCF82B30E7950007CCA9 /* Protocols */,
+				C494CCFB2B30E7DC0007CCA9 /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		C494CCF82B30E7950007CCA9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C494CCF92B30E7BB0007CCA9 /* CoordinatorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +361,8 @@
 			files = (
 				C494CCE42B30D0EB0007CCA9 /* NetworkClient.swift in Sources */,
 				C494CCC12B30C7E20007CCA9 /* Tour.swift in Sources */,
+				C494CCFC2B30E7DC0007CCA9 /* AppCoordinator.swift in Sources */,
+				C494CCFA2B30E7BB0007CCA9 /* CoordinatorProtocol.swift in Sources */,
 				C494CCC62B30CCB90007CCA9 /* HotelViewController.swift in Sources */,
 				C494CCA42B30BB670007CCA9 /* ViewController.swift in Sources */,
 				C494CCC92B30CCDE0007CCA9 /* HotelViewModel.swift in Sources */,
